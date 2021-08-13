@@ -14,6 +14,7 @@ exports.viewStudents = async (req, res, next) => {
     }
 }
 exports.addStudent = async (req, res, next) => {
+  
     try {
 
         let newStudent = new studentCollection({

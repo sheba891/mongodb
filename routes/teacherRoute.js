@@ -4,6 +4,9 @@ const teacherRoute = express.Router()
 
 teacherRoute.get("/", teacherController.viewTeachers)
 teacherRoute.post("/add", teacherController.addTeacher)
+teacherRoute.put ("/update/:id", teacherController.updateTeachers)
+teacherRoute.delete ("/delete/:id", teacherController.deleteTeacher)
+
 
 module.exports = teacherRoute;
 
